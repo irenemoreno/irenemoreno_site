@@ -1,0 +1,77 @@
+<div class ="container">
+<!-- navegacion -->
+		<div class="row middle-xs fondo">
+
+			<div class="col-xs-12 col-md-8 first-xs rosa josefin izq">
+				<h1 class="big"><a href="index.html" class="rosa esp_izq_peq">irene moreno</a></h1>
+			</div>
+
+			<nav class="col-xs-12 col-md-4">
+				<table>
+					<tr>
+						<td> <p class="josefin gris_claro subrayado midfont ama_back">blog</p></td>
+						<td><%= link_to 'contacto', 'contact', { :class => 'enlace josefin midfont'} %></td>
+					</tr>
+				</table>
+			</nav>
+		</div>
+		<hr class="doble">
+
+<!-- titulo blog -->
+		<div class="row">
+			<div class="col-xs-12">
+				<h2 class="arvo big gris_oscuro esp_izq_peq"> # { im_workbench } </h2>
+			</div>
+		</div>
+<!-- titulo blog -->
+		<div class="row">
+			<div class="col-xs-12 col-md-8" id="post">
+				<div>
+					<p class="josefin rosa midfont">No, esto no es un post, solo un MoocUp</p>
+					<p class="arvo tinyfont">posted by <strong>i.moreno</strong> | date <strong> 3 mar 16</strong></p>
+					<p class="arvo smallfont">Este blog esta en construcción, con esto quiero decir, que lo estoy desarrollando desde 0, con Ruby on Rails. Me llevará un tiempo, calculo que un par de semanas. Podéis seguir mis avances en <a href = "" class="enlace subrayado">este</a> repositorio de Github. <br><br>
+					Aquí esta mi siguiente reto...<br><br>
+					Wish me luck!<br><br>
+					</p>
+					<%= image_tag "megustaTw.png" %>
+					
+					<br><br>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-md-4 center-xs">
+				<div id="animate">
+					<img src="" id="imagenjq" width="300px" height="300px">
+				</div>
+			</div>
+		</div>
+
+		<!--<div class="row">
+			<div class="col-xs-12 center-xs suscribe pequeno">
+				 <div class="box josefin blanco azul">Suscribete a mi newsletter</div>
+			</div>
+
+		   <div class="col-xs-offset-9 col-xs-3 pink">
+		        <div class="box josefin blanco">Suscribete a mi newsletter<br><br></div>
+		    </div> 
+		</div> -->
+
+		<!-- Redes Sociales  -->
+		<div class="row center-xs">
+			<div class="col-xs-12">
+
+				<%= link_to image_tag('twi.png', {:alt => 'irenemoreno-twitter', :title => 'irenemoreno-twitter', :class => 'blog_icon'}), 'https://twitter.com/Ireono', :target => 'blank'%>
+
+				<%= link_to image_tag('linke.png', {:alt => 'irenemoreno-linkedin', :title => 'irenemoreno-linkedin', :class => 'blog_icon'}), 'https://es.linkedin.com/in/irenemorenocano', :target => 'blank'%>
+				
+				<%= link_to image_tag('github.png', {:alt => 'irenemoreno-github', :title => 'irenemoreno-github', :class => 'blog_icon'}), 'https://github.com/irenemoreno', :target => 'blank'%>
+	   		</div>		
+		</div>
+<hr class="simple">
+		<!-- pie de pagina -->
+		<footer class="row center-xs">
+			<div class="col-xs-12">
+				<h3 class="josefin smallfont">irene moreno @ 2016</h3>
+			</div>
+		</footer>
+	</div>

@@ -1,0 +1,142 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+li { list-style:none; 
+	 line-height: 1.8;
+	}
+
+table { 
+	width: 100%; 
+	text-align: center;
+}
+
+img { max-width: 100%; }
+
+
+.fondo{
+  background-color: #ccffcc;
+}
+
+/* hr */
+.doble {
+	height: 6px;
+	background: url(http://ibrahimjabbari.com/english/images/hr-11.png) repeat-x 0 0;
+    border: 0;
+}
+.simple {  
+	border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+
+/* Fonts  */
+.josefin {font-family: 'Josefin Sans', sans-serif;}
+.arvo {font-family: 'Lato', sans-serif;}
+
+.largefont { font-size: 3.5em; }
+.big { font-size: 2em; }
+.midfont { font-size: 1.2em; }
+.smallfont { font-size: 1em; }
+.tinyfont { font-size: 0.7em; }
+
+.gris_claro { color: #333333; }
+.gris_oscuro { color: #383836; }
+.amarillo { color: #DEE612; }
+.blanco { color: #FFFEFC; }
+.rosa { color: #996699; }
+.blue { color: #3366cc; }
+.subrayado { text-decoration: underline; }
+
+/*  */
+.centro { text-align: center; }
+.alto { height: 10em; }
+.pequeno { height: 3em; }
+.ama_back {background-color: #FFFEFC;}
+.azul{ background-color: #996699; }
+.pink{ background-color: #8C1F4D; }
+
+/*  */
+.bio {
+	padding-right: 20px;
+	padding-left: 20px;
+	line-height: 1.4;
+	text-align: justify;
+	text-indent: 4em;
+}
+
+.rrss{
+	text-align: left;
+	line-height: 1.6;
+}
+
+
+#post{
+	padding-right: 5%;
+	padding-left: 5%;
+	margin-bottom: 5%;
+	text-align: justify;
+	background-color: #FFFEFC;
+	border-radius: 15px 15px 15px 15px;
+	-moz-border-radius: 15px 15px 15px 15px;
+	-webkit-border-radius: 15px 15px 15px 15px;
+	border: 3px solid #8C1F4D;
+}
+.animacion{
+	width: 350px;
+	height: 350px;
+}
+
+.suscribe{
+	width: 350px;
+	height: 100px;
+}
+/* iconos */
+.micono {
+	max-width: 175px;
+	border-radius: 50%;
+	border-style: double;
+	border-color: #707070;
+	margin-left: 2.7em;
+	margin-top: 1em;
+}
+
+.blog_icon{
+	width: 2em;
+	margin-right: 1em;
+	margin-left: 1em;
+}
+
+.rrss_footer{
+	width: 35px;
+	padding-right: 1%;
+	padding-left: 1%;
+}
+
+/* espaciado */
+.espacio_izq { padding-left: 70px; }
+.esp_izq_peq { padding-left: 35px; }
+.principal { margin-top: 10px; }
+.ancho_celda{ width: 8em;}
+
+/* links */
+a { text-decoration: none; }
+a:hover { 
+	color: #707070;
+	opacity: 0.7;
+    filter: alpha(opacity=70); /* For IE8 and earlier */
+}
+
+.enlace{ color: #383836; }
