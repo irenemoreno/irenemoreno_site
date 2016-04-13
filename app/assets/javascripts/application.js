@@ -14,13 +14,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-$(document).ready(function(){
 
-	if($("body").height() < $(window).height()){
-		$("footer").css({"position":"absolute","bottom":"0px"});
-	}
-
-});
 
 var imagenes = ['assets/images/gif2.png','assets/images/gif3.png','assets/images/gif4.png'];
 var x = 0;

@@ -13,9 +13,10 @@
  *= require_tree .
  *= require_self
  */
-li { list-style:none; 
+li { 
+	list-style:none; 
 	 line-height: 1.8;
-	}
+}
 
 table { 
 	width: 100%; 
@@ -25,16 +26,15 @@ table {
 img { max-width: 100%; }
 
 
-.fondo{
-  background-color: #ccffcc;
-}
+.fondo { background-color: #ccffcc; }
 
-/* hr */
+/* lineas */
 .doble {
 	height: 6px;
 	background: url(http://ibrahimjabbari.com/english/images/hr-11.png) repeat-x 0 0;
     border: 0;
 }
+
 .simple {  
 	border: 0;
     height: 1px;
@@ -59,6 +59,7 @@ img { max-width: 100%; }
 .rosa { color: #996699; }
 .blue { color: #3366cc; }
 .subrayado { text-decoration: underline; }
+.negrita { font-weight: bold; }
 
 /*  */
 .centro { text-align: center; }
@@ -94,6 +95,15 @@ img { max-width: 100%; }
 	-webkit-border-radius: 15px 15px 15px 15px;
 	border: 3px solid #8C1F4D;
 }
+
+.fondo_contacto{
+	background-color: #fff; 
+	background-image: 
+	linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+	linear-gradient(#eee .1em, transparent .1em);
+	background-size: 100% 1.2em;
+}
+
 .animacion{
 	width: 350px;
 	height: 350px;
@@ -129,7 +139,7 @@ img { max-width: 100%; }
 .espacio_izq { padding-left: 70px; }
 .esp_izq_peq { padding-left: 35px; }
 .principal { margin-top: 10px; }
-.ancho_celda{ width: 8em;}
+.ancho_celda{ width: 5em;}
 
 /* links */
 a { text-decoration: none; }
