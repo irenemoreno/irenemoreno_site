@@ -31,35 +31,60 @@
 
 
 
-  <div class="row">
-    <div class="col-xs-12 center-xs">
+  <div class="row center-xs">      
         <%= form_tag("") do %>
-          <p>
-            <%= label_tag "nombre", "Nombre"%>
-            <%= text_field_tag 'nombre' %>
-          </p>
+            <table class="arvo gris_claro smallfont">
 
-          <p>
-            <%= label_tag 'email', 'Email' %>
-            <%= email_field_tag 'email' %>  
-          </p>
+                  <tr>
+                    <td class="der"><%= label_tag "nombre", "Nombre"%></td>
+                    <td class="izq"><%= text_field_tag 'nombre' %></td>
+                  </tr>
 
-          <p>
-            <%= label_tag 'asunto', 'Asunto' %>
-            <%= text_field_tag 'asunto' %>
-          </p>
+                  <tr>
+                    <td class="der"><%= label_tag 'email', 'Email' %></td>
+                    <td class="izq"><%= email_field_tag 'email' %></td>
+                  </tr>
 
-          <p>
-            <%= label_tag 'mensaje', 'Mensaje' %><br>
-            <%= text_area_tag 'mensaje', nil, :size => '25x10' %>
-          </p>
+                  <tr>
+                    <td class="der"><%= label_tag 'asunto', 'Asunto' %></td>
+                    <td class="izq"><%= text_field_tag 'asunto' %></td>
+                  </tr>
 
-          <p>
-            <%= submit_tag 'Enviar' %>
-          </p>
+                  <tr>
+                    <td class="der"><%= label_tag 'mensaje', 'Mensaje' %></td>
+                    <td class="izq"><%= text_area_tag 'mensaje', nil, :size => '25x10' %></td>
+                  </tr>
+
+                   <tr  colspan="2" class="centro">
+                    <%= submit_tag 'Enviar', { :class => "josefin rosa"} %>
+                  </tr>
+
+           </table>
         <% end %>
-      </div>
+       
   </div>
 
+      <div class="row center-xs principal">
 
+        <h3 class="josefin smallfont gris_claro ">Búscame en las redes sociales</h3>
+  
+        <%= link_to image_tag('twi.png', {:alt => 'irenemoreno-twitter', :title => 'irenemoreno-twitter', :class => 'blog_icon'}), 'https://twitter.com/Ireono', :target => 'blank'%>
+
+        <%= link_to image_tag('linke.png', {:alt => 'irenemoreno-linkedin', :title => 'irenemoreno-linkedin', :class => 'blog_icon'}), 'https://es.linkedin.com/in/irenemorenocano', :target => 'blank'%>
+            
+        <%= link_to image_tag('github.png', {:alt => 'irenemoreno-github', :title => 'irenemoreno-github', :class => 'blog_icon'}), 'https://github.com/irenemoreno', :target => 'blank'%>
+
+      </div>
+
+
+     
+ 
 </div>
+
+ <footer>
+
+        <hr class="simple principal">
+            
+        <h3 class="josefin smallfont">irene moreno @ 2016</h3>
+            
+</footer>

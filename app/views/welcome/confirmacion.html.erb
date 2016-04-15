@@ -1,0 +1,51 @@
+<div class ="container fondo_contacto">
+<!-- navegacion -->
+    <div class="row middle-xs fondo">
+
+      <div class="col-xs-12 col-md-8 first-xs">
+        <h1 class="big"><a href="index.html" class="rosa josefin esp_izq_peq">irene moreno</a></h1>
+      </div>
+
+	      <nav class="col-xs-12 col-md-4">
+	        <table>
+	          <tr>
+	            <td width="100"><%= link_to 'blog', 'blog', { :class => 'enlace josefin negrita midfont'} %></td>
+	            <td width="100"><p class="josefin gris_claro negrita midfont ama_back">contacto</p></td>
+
+	          </tr>
+	        </table>
+	      </nav>
+
+    </div>
+
+    <hr class="doble">
+
+
+
+    <div class="row center-xs">
+    	<h4 class="misfont gris_claro arvo"><%= @nombre %>
+    	Tu correo ha sido enviado, <br>
+    	Me pondré en contacto contigo en breve.<br>
+    	Muchas gracias y ¡buen día!</h4>
+    </div>
+
+	<div class="row center-xs">
+	
+		<%= link_to image_tag('twi.png', {:alt => 'irenemoreno-twitter', :title => 'irenemoreno-twitter', :class => 'blog_icon'}), 'https://twitter.com/Ireono', :target => 'blank'%>
+
+		<%= link_to image_tag('linke.png', {:alt => 'irenemoreno-linkedin', :title => 'irenemoreno-linkedin', :class => 'blog_icon'}), 'https://es.linkedin.com/in/irenemorenocano', :target => 'blank'%>
+				
+		<%= link_to image_tag('github.png', {:alt => 'irenemoreno-github', :title => 'irenemoreno-github', :class => 'blog_icon'}), 'https://github.com/irenemoreno', :target => 'blank'%>
+
+	</div>
+
+<!-- /div container -->
+</div>
+
+ <footer>
+
+        <hr class="simple principal">
+            
+        <h3 class="josefin smallfont">irene moreno @ 2016</h3>
+            
+</footer>

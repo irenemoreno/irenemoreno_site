@@ -13,6 +13,23 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	min-height: 100vh;
+	flex-wrap: wrap;
+
+}
+
+footer {
+	margin-top: auto;
+	text-align: center;
+	line-height: 2;
+	width: 100%;
+}
+
 li { 
 	list-style:none; 
 	 line-height: 1.8;
@@ -24,6 +41,8 @@ table {
 }
 
 img { max-width: 100%; }
+
+
 
 
 .fondo { background-color: #ccffcc; }
@@ -63,6 +82,8 @@ img { max-width: 100%; }
 
 /*  */
 .centro { text-align: center; }
+.izq { text-align: left; }
+.der { text-align: right; }
 .alto { height: 10em; }
 .pequeno { height: 3em; }
 .ama_back {background-color: #FFFEFC;}
@@ -138,7 +159,7 @@ img { max-width: 100%; }
 /* espaciado */
 .espacio_izq { padding-left: 70px; }
 .esp_izq_peq { padding-left: 35px; }
-.principal { margin-top: 10px; }
+.principal { margin-top: 50px; }
 .ancho_celda{ width: 5em;}
 
 /* links */

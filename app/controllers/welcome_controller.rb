@@ -1,8 +1,12 @@
 class WelcomeController < ApplicationController
+
   def index
   end
 
   def blog
+  end
+
+  def confirmacion
   end
 
   def contacto
@@ -10,11 +14,12 @@ class WelcomeController < ApplicationController
   	if request.post?
 
 		  	if Contacto.micorreo(params).deliver and Contacto.enviar(params).deliver
-		  		flash.now[:noticia] = "Enviado correctamente"
+		  		render 'confirmacion' 
         else
           flash.now[:error] = "Correo no enviado"
 		  	end
-			   
+			 
+       
 		
 	end
   end
