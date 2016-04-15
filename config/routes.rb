@@ -8,9 +8,9 @@ Rails.application.routes.draw do
   root 'welcome#index'
 
   get 'welcome/blog'
-  get 'welcome/contact'
+  get 'welcome/contacto'
   get 'welcome/index'
-
+  post 'welcome/contacto'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

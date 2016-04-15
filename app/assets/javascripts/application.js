@@ -16,7 +16,7 @@
 //= require_tree .
 
 
-var imagenes = ['assets/images/gif2.png','assets/images/gif3.png','assets/images/gif4.png'];
+var imagenes = ['gif2.png','gif3.png','gif4.png'];
 var x = 0;
 var reproducir = function() {
 	if (x > imagenes.length)
