@@ -7,14 +7,9 @@ class WelcomeController < ApplicationController
 
   def contacto
 
-    Email.enviar_correo(params).deliver_now
-    Email.enviar(params).deliver_now
-
   	if request.post?
 
-  		
-
-		  	if Email.micorreo(params).deliver and Email.enviar(params).deliver
+		  	if Contacto.micorreo(params).deliver and Contacto.enviar(params).deliver
 		  		flash.now[:noticia] = "Enviado correctamente"
         else
           flash.now[:error] = "Correo no enviado"
