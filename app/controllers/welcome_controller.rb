@@ -14,7 +14,7 @@ class WelcomeController < ApplicationController
   	if request.post?
 
 		  	if Contacto.micorreo(params).deliver and Contacto.enviar(params).deliver
-		  		render 'confirmacion' 
+		  		render 'index' 
         else
           flash.now[:error] = "Correo no enviado"
 		  	end

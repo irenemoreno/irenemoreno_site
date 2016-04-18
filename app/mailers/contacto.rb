@@ -23,6 +23,7 @@ class Contacto < ApplicationMailer
 
 	  	mail:to => email, :subject => asunto
 	  	
+	  	
 	end	
 
 end 

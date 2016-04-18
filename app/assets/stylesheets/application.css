@@ -86,6 +86,7 @@ img { max-width: 100%; }
 .der { text-align: right; }
 .alto { height: 10em; }
 .pequeno { height: 3em; }
+.interletrado { letter-spacing: 2px; }
 .ama_back {background-color: #FFFEFC;}
 .azul{ background-color: #996699; }
 .pink{ background-color: #8C1F4D; }
@@ -146,8 +147,8 @@ img { max-width: 100%; }
 
 .blog_icon{
 	width: 2em;
-	margin-right: 1em;
-	margin-left: 1em;
+	margin-right: 0.5em;
+	margin-left: 0.5em;
 }
 
 .rrss_footer{
@@ -160,7 +161,7 @@ img { max-width: 100%; }
 .espacio_izq { padding-left: 70px; }
 .esp_izq_peq { padding-left: 35px; }
 .principal { margin-top: 50px; }
-.ancho_celda{ width: 5em;}
+
 
 /* links */
 a { text-decoration: none; }
