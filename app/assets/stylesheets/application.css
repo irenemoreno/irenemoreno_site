@@ -26,7 +26,7 @@ body {
 footer {
 	margin-top: auto;
 	text-align: center;
-	line-height: 2;
+	line-height: 1;
 	width: 100%;
 }
 
@@ -43,7 +43,12 @@ table {
 img { max-width: 100%; }
 
 
-
+.container {
+	display:flex;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	flex-direction: column;
+}
 
 .fondo { background-color: #ccffcc; }
 
@@ -141,7 +146,7 @@ img { max-width: 100%; }
 	border-radius: 50%;
 	border-style: double;
 	border-color: #707070;
-	margin-left: 2.7em;
+	/*margin-left: 2.7em;*/
 	margin-top: 1em;
 }
 
