@@ -1,41 +1,41 @@
 <div class ="container">
-<!-- navegacion -->
-		<div class="row middle-xs fondo">
 
-			<div class="col-xs-12 col-md-8 first-xs rosa josefin esp_izq_peq">
-				<h1 class="largefont">irene moreno</h1>
+<!-- navegacion -->
+	<header>
+
+		<div class="row navegacion">
+			<div class="col-xs-12 col-md-6 rosa josefin esp_izq_peq">
+				<h1 class="titular">irene moreno</h1>
 			</div>
 
-			<nav class="col-xs-12 col-md-4">
-				<table>
-					<tr>
-						<td width="100"><%= link_to 'blog', '/welcome/blog', { :class => 'enlace josefin midfont negrita gris_oscuro mar'} %></td>
-			
-						<td width="100"><%= link_to 'contacto', '/welcome/contacto', { :class => 'enlace josefin midfont negrita gris_oscuro'} %></td>
-					</tr>
-				</table>
-			</nav>
+				
+			<div class="row col-xs-2 col-md-6 middle-xs end-md">
+				<nav>
+					<ul class="menu">
+						<li><%= link_to 'blog', '/welcome/blog', { :class => 'enlace josefin midfont negrita gris_oscuro mar'} %></li>
+					
+						<li><%= link_to 'contacto', '/welcome/contacto', { :class => 'enlace josefin midfont negrita gris_oscuro'} %></li>
+					</ul>	
+				</nav>
+			</div>
 		</div>
 
-<hr class="doble">
+	</header>
+
+
+
 <!-- descripción -->
 		<div class="row ">
-			<div class="col-xs-12 col-md-8">
-				<div class="bio">
+		
+			<div class="col-xs-12 col-md-9">
+				<div class="bio principal">
 					<h2 class="arvo smallfont gris_claro interletrado"> DESARROLLO WEB | MK DIGITAL </h2>
 					<p class="smallfont arvo bio gris_claro">
 					Apasionada por las nuevas tecnologías, soy una profesional del marketing. Sin embargo, me pierdo por el <strong>desarrollo web</strong> con <strong>Ruby on Rails</strong>. Siempre abierta a aprender nuevas herramientas y lenguajes, esta página esta creada 'artesanalmente', y desde cero, con <strong>HTML5</strong>. Para el diseño, por supuesto, he trabajado con <strong>CSS</strong> pero me han echado un cable, <strong>Bootstrap</strong> y, después, <strong>Flexbox</strong>, para darle ese toque <em>responsive</em>.  Un poquito de <strong>Jquery</strong>, sin abusar, para darla vidilla … <em>et voilà.</em></p>
 					<p class="smallfont arvo bio gris_claro">
 					Tampoco reniego de mis raíces, y no podía dejar de lado el <strong>Marketing digital</strong>. He implementado cada directriz <strong>SEO</strong> que los amigos de <strong>Google</strong> proponen, a ver si consigo desbancar de las primeras posiciones a la sexóloga con la que comparto nombre. ¡Todo un reto!</p>
 					<p class="smallfont arvo bio gris_claro">
-					Hablando de retos, me encantan. El último superado, de la mano de 
-					
-					<%= link_to 'Talentum Empleo', 'http://www.talentumempleo.com', { :class => 'enlace subrayado'}%>
-
-					, donde descubrí mi verdadera vocación. Y en esta misma web, encontraréis el 
-					
-					<%= link_to 'siguiente reto', 'blog', { :class => 'enlace subrayado'}%>.
-
+					Hablando de retos, me encantan. El último superado, de la mano de <%= link_to 'Talentum Empleo', 'http://www.talentumempleo.com', { :class => 'gris_oscuro subrayado'}%>, donde descubrí mi verdadera vocación. Y en esta misma web, encontraréis el <%= link_to 'siguiente reto', 'blog', { :class => 'gris_oscuro subrayado'}%>.
 					</p>
 					<p class="smallfont arvo bio gris_claro">
 					El objetivo de este proyecto es que vaya creciendo y desarrollándose. Lo que véis hoy es un boceto, hay mucho por hacer, muchos detalles por pulir. Pero, en consonacia con los fundamentos de metodologías agíles, creo que tal cual está, ya aporta valor a mi objetivo inicial.</p>
@@ -46,22 +46,22 @@
 			</div>
 
 <!-- redes sociales -->
-			<div class="col-xs-12 col-md-4 center-xs ">
+			<div class="col-xs-12 col-md-3 center-xs ">
 					<%= image_tag "pic_web.jpg", :alt => "Irene Moreno", :title => "irene mmoreno", :class => 'micono' %>
-   					 	<div class="josefin">
+   					 	<div class="josefin principal">
    					 		<ul>
    					 			<a href="https://twitter.com/Ireono" class="enlace" target="_blank" title="irenemoreno-twitter">
-   					 			<li><%= image_tag "twi.png", :alt => "irenemoreno-twitter", :title => "irenemoreno-twitter", :class => 'blog_icon' %></li>
+   					 			<li><%= image_tag "twitter.svg", :alt => "irenemoreno-twitter", :title => "irenemoreno-twitter", :class => 'blog_icon' %></li>
 	   					 		<li>Estoy en Twitter</li>
 	   					 		</a>
 	   					 		
 	   					 		<a href="https://es.linkedin.com/in/irenemorenocano" class="enlace" target="_blank" title="irenemoreno-linkedin">
-	   					 		<li><%= image_tag "linke.png", :alt => "irenemoreno-linkedin", :title => "irenemoreno-linkedin", :class => 'blog_icon' %></li>
+	   					 		<li><%= image_tag "linkedin.svg", :alt => "irenemoreno-linkedin", :title => "irenemoreno-linkedin", :class => 'blog_icon' %></li>
 	   					 		<li>Búscame en Linkedin</li>
 	   					 		</a>
 	   					 		
 	   					 		<a href="https://github.com/irenemoreno" class="enlace" target="_blank" title="irenemoreno-github">
-	   					 		<li><%= image_tag "github.png", :alt => "irenemoreno-github", :title => "irenemoreno-github", :class => 'blog_icon' %></li>
+	   					 		<li><%= image_tag "github.svg", :alt => "irenemoreno-github", :title => "irenemoreno-github", :class => 'blog_icon' %></li>
 	   					 		<li>Mis repositorios en GitHub</li>
 	   					 		</a>
 	   					 	</ul>

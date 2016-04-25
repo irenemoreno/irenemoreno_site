@@ -1,80 +1,63 @@
 <div class ="container fondo_contacto">
 <!-- navegacion -->
-    <div class="row middle-xs fondo">
 
-      <div class="col-xs-12 col-md-8 first-xs">
-        <h1 class="big"><a href="index.html" class="rosa josefin esp_izq_peq">irene moreno</a></h1>
+<header>
+
+    <div class="row navegacion">
+
+      <div class="col-xs-12 col-md-6">
+        <h1 class="titulin"><a href="index.html" class="josefin rosa esp_izq_peq">irene moreno</a></h1>
       </div>
 
-      <nav class="col-xs-12 col-md-4">
-        <table>
-          <tr>
-            <td width="100"><%= link_to 'blog', 'blog', { :class => 'enlace josefin negrita midfont'} %></td>
-            <td width="100"><p class="josefin gris_claro negrita midfont ama_back">contacto</p></td>
 
-          </tr>
-        </table>
-      </nav>
+      <div class="row col-xs-12 col-md-6 middle-xs end-md">
+        <nav>
+          <ul class="menu">
+            <li><p><%= link_to 'home', '/welcome/index',{ :class => 'enlace josefin midfont negrita gris_oscuro mar'}  %></p></li>
+
+            <li><p><%= link_to 'blog', '/welcome/blog',{ :class => 'enlace josefin midfont negrita gris_oscuro mar'}  %></p></li>
+          
+            <li class="onpage"><p class="josefin gris_claro negrita midfont ama_back">contacto</p></li>
+          </ul> 
+        </nav>
+      </div>
 
     </div>
+
+  </header>
 
     <hr class="doble">
 
-    <div class="row center-xs middle-xs">
-      <div class="col-xs-12 centro">
-        <div>
-          <h2 class="josefin midfont rosa">CONTACTO</h2>
-          <h4 class="josefin smallfont gris_claro interletrado"><em>Now, open for hiring!</em></h4>
-        </div>
-      </div>
-    </div>
+
 
 <!-- Formulario de contacto -->
 
-  <div class="row center-xs">      
+  <div class="row center-xs">    
+
+    <div class="formulario">
+
+          <h2 class="josefin midfont rosa">CONTACTO</h2>
+
+     <div class="redes-sociales">
+        <%= link_to image_tag('twitter.svg', {:alt => 'irenemoreno-twitter', :title => 'irenemoreno-twitter', :class => 'blog_icon'}), 'https://twitter.com/Ireono', :target => 'blank'%>
+
+        <%= link_to image_tag('linkedin.svg', {:alt => 'irenemoreno-linkedin', :title => 'irenemoreno-linkedin', :class => 'blog_icon'}), 'https://es.linkedin.com/in/irenemorenocano', :target => 'blank'%>
+        
+        <%= link_to image_tag('github.svg', {:alt => 'irenemoreno-github', :title => 'irenemoreno-github', :class => 'blog_icon'}), 'https://github.com/irenemoreno', :target => 'blank'%>
+     </div>
+
         <%= form_tag("") do %>
-            <table class="arvo gris_claro smallfont">
-
-                  <tr>
-                    <td class="der"><%= label_tag "nombre", "Nombre", { :class => "arvo tinyfont negrita"} %></td>
-                    <td class="izq"><%= text_field_tag 'nombre' %></td>
-                  </tr>
-
-                  <tr>
-                    <td class="der"><%= label_tag 'email', 'Email', { :class => "arvo tinyfont negrita"} %></td>
-                    <td class="izq"><%= email_field_tag 'email' %></td>
-                  </tr>
-
-                  <tr>
-                    <td class="der"><%= label_tag 'asunto', 'Asunto', { :class => "arvo tinyfont negrita"} %></td>
-                    <td class="izq"><%= text_field_tag 'asunto' %></td>
-                  </tr>
-
-                  <tr>
-                    <td class="der"><%= label_tag 'mensaje', 'Mensaje', { :class => "arvo tinyfont negrita"} %></td>
-                    <td class="izq"><%= text_area_tag 'mensaje', nil, :size => '25x10' %></td>
-                  </tr>
-
-                   <tr class="centro">
-                    <td> <%= submit_tag 'Enviar', { :class => "josefin rosa"} %></td>
-                  </tr>
-
-           </table>
+            
+                  <%= text_field_tag 'nombre', nil, placeholder: 'Nombre', class: 'arvo campos' %>
+                  <%= email_field_tag 'email', nil, placeholder: 'Email', class:'arvo campos' %>
+                  <%= text_field_tag 'asunto', nil, placeholder: 'Asunto', class: 'arvo campos' %>
+                  <%= text_area_tag 'mensaje', nil, placeholder: 'Escribe aquí tu mensaje', rows: 8, cols: 35, class: 'campos ' %>
+                  <%= submit_tag 'Enviar', { :class => "arvo rosa campos", id: 'enviando'} %>
         <% end %>
-       
+    </div>  
   </div>
 
-      <div class="row center-xs principal">
-
-        <h3 class="josefin smallfont gris_claro ">También puedes buscarme en las redes sociales</h3>
-  
-        <%= link_to image_tag('twi.png', {:alt => 'irenemoreno-twitter', :title => 'irenemoreno-twitter', :class => 'blog_icon'}), 'https://twitter.com/Ireono', :target => 'blank'%>
-
-        <%= link_to image_tag('linke.png', {:alt => 'irenemoreno-linkedin', :title => 'irenemoreno-linkedin', :class => 'blog_icon'}), 'https://es.linkedin.com/in/irenemorenocano', :target => 'blank'%>
-            
-        <%= link_to image_tag('github.png', {:alt => 'irenemoreno-github', :title => 'irenemoreno-github', :class => 'blog_icon'}), 'https://github.com/irenemoreno', :target => 'blank'%>
-
-      </div>
+      
 
   <footer>
 

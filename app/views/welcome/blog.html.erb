@@ -1,20 +1,29 @@
 <div class ="container">
 <!-- navegacion -->
-		<div class="row middle-xs fondo">
+		<header>
 
-			<div class="col-xs-12 col-md-8 first-xs">
-				<h1 class="big"><a href="index.html" class="josefin rosa esp_izq_peq">irene moreno</a></h1>
-			</div>
+    <div class="row navegacion">
 
-			<nav class="col-xs-12 col-md-4">
-				<table>
-					<tr>
-						<td width="100"><p class="josefin gris_claro negrita midfont ama_back">blog</p></td>
-						<td width="100"><%= link_to 'contacto', 'contacto', { :class => 'enlace negrita josefin midfont'} %></td>
-					</tr>
-				</table>
-			</nav>
-		</div>
+      <div class="col-xs-12 col-md-6">
+        <h1 class="titulin"><a href="index.html" class="josefin rosa esp_izq_peq">irene moreno</a></h1>
+      </div>
+
+      <div class="row col-xs-12 col-md-6 middle-xs end-md">
+        <nav>
+          <ul class="menu">
+            <li><p><%= link_to 'home', '/welcome/index',{ :class => 'enlace josefin midfont negrita gris_oscuro mar'}  %></p></li>
+          
+            <li class="onpage"><p class="josefin gris_claro negrita midfont ama_back">blog</p></li>
+
+            <li><p><%= link_to 'contacto', '/welcome/contacto',{ :class => 'enlace josefin midfont negrita gris_oscuro mar'}  %></p></li>
+
+          </ul> 
+        </nav>
+      </div>
+      
+    </div>
+
+  </header>
 		<hr class="doble">
 
 <!-- titulo blog -->
@@ -24,33 +33,34 @@
 			</div>
 
 <!-- Redes Sociales  -->
-			<div class="col-xs-12 col-md-4 center-xs">
+			<div class="col-xs-12 col-md-4 center-xs redes-sociales">
 
-				<%= link_to image_tag('twi.png', {:alt => 'irenemoreno-twitter', :title => 'irenemoreno-twitter', :class => 'blog_icon'}), 'https://twitter.com/Ireono', :target => 'blank'%>
+				<%= link_to image_tag('twitter.svg', {:alt => 'irenemoreno-twitter', :title => 'irenemoreno-twitter', :class => 'blog_icon'}), 'https://twitter.com/Ireono', :target => 'blank'%>
 
-				<%= link_to image_tag('linke.png', {:alt => 'irenemoreno-linkedin', :title => 'irenemoreno-linkedin', :class => 'blog_icon'}), 'https://es.linkedin.com/in/irenemorenocano', :target => 'blank'%>
+				<%= link_to image_tag('linkedin.svg', {:alt => 'irenemoreno-linkedin', :title => 'irenemoreno-linkedin', :class => 'blog_icon'}), 'https://es.linkedin.com/in/irenemorenocano', :target => 'blank'%>
 				
-				<%= link_to image_tag('github.png', {:alt => 'irenemoreno-github', :title => 'irenemoreno-github', :class => 'blog_icon'}), 'https://github.com/irenemoreno', :target => 'blank'%>
+				<%= link_to image_tag('github.svg', {:alt => 'irenemoreno-github', :title => 'irenemoreno-github', :class => 'blog_icon'}), 'https://github.com/irenemoreno', :target => 'blank'%>
 	   		</div>		
 		</div>
 
 <!-- post -->
 		<div class="row">
-			<div class="col-xs-12 col-md-8 bottom-xs" id="post">
+			<div class="col-xs-12 col-md-8 bottom-xs post end-xs">
 				<div>
 					<p class="josefin rosa big">No, esto no es un post, sólo un mockup</p>
 					<p class="arvo tinyfont">posted by <strong>i.moreno</strong> | date <strong> 3 mar 16</strong></p>
 					<p class="arvo smallfont">Este blog esta en construcción, con esto quiero decir, que lo estoy desarrollando desde 0, con Ruby on Rails. Me llevará un tiempo, calculo que un par de semanas. Podéis seguir mis avances en 
 					
-					<%= link_to 'este repositorio', 'https://github.com/irenemoreno/irenemoreno_site', { :class => 'enlace subrayado', :target => "blank"}%>
+					<%= link_to 'este repositorio', 'https://github.com/irenemoreno/irenemoreno_site', { :class => 'gris_oscuro subrayado', :target => "blank"}%>
 
 					de Github. <br><br>
+					La idea, es tener un banco de trabajo o <em>workbench</em>, dónde poder prácticar todas aquellas técnologías que voy aprendiendo. <br><br>
 					Aquí esta mi siguiente reto.
 					Wish me luck!<br><br>
 					
 					NOTA: Toda sugerencia y crítica constructiva es bienvenida :) Puedes contactarme por 
 
-					<%= link_to 'aquí', 'contacto', { :class => 'enlace subrayado'} %>
+					<%= link_to 'aquí', 'contacto', { :class => 'gris_oscuro subrayado'} %>
 					.
 					</p><br>
 					<%= image_tag "megustaTw.png" %>
@@ -59,11 +69,11 @@
 				</div>
 			</div>
 
-			<div class="col-xs-12 col-md-4 center-xs">
-				<div id="animate">
-					<img src="http://i.picasion.com/pic81/bee5a2fb280118daff309e633fc924d4.gif" width="300" height="300" border="0" alt="http://picasion.com/" /><br />
-				</div>
+<!-- banner-->
+			<div class="col-xs-12 col-md-4 center-xs fondo">
+				<div class="banner"></div>
 			</div>
+
 		</div>
 
 	<footer>
