@@ -100,7 +100,8 @@ img { max-width: 100%; }
 
 	@media (max-width:768px) {
 		.titular{
-			margin-left:.2em;
+			text-align: center;
+			margin-left: 0;
 		}
 		.titulin{
 			background:#333333;
