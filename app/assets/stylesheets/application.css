@@ -44,6 +44,7 @@ img { max-width: 100%; }
 	display:-webkit-flex;
 	display:-ms-flexbox;
 	flex-direction: column;
+	flex-wrap: wrap;
 }
 
 /* header y nav */
@@ -68,7 +69,6 @@ img { max-width: 100%; }
 		margin-left: 0.7em;
 	}
 
-
 	.menu {
 		margin: 0;
 		list-style: none;
@@ -86,7 +86,6 @@ img { max-width: 100%; }
 		border-right: dotted 3px;
 		border-left: dotted 3px;
 		border-color: #FFFEFC;
-		
 	}
 
 	.menu li p{
@@ -97,7 +96,6 @@ img { max-width: 100%; }
 	.menu li:hover{
 		background: rgba(0,0,0,0.3);
 		cursor: pointer;
-
 	}
 
 	@media (max-width:768px) {
@@ -142,7 +140,7 @@ img { max-width: 100%; }
 .josefin {font-family: 'Josefin Sans', sans-serif;}
 .arvo {font-family: 'Lato', sans-serif;}
 
-.big { font-size: 2em; }
+.big { font-size: 1.8em; }
 .midfont { font-size: 1.2em; }
 .smallfont { font-size: 1em; }
 .tinyfont { font-size: 0.7em; }
@@ -170,14 +168,31 @@ img { max-width: 100%; }
 	background-image: url(ramita.png);
 }
 
+
 /* index */
 	.bio {
-		padding-right: 20px;
+		padding-right: 10px;
 		padding-left: 20px;
 		line-height: 1.4;
 		text-align: justify;
-		text-indent: 4em;
+		text-indent: 3em;
 	}
+	.titu{
+		margin-top: 1em;
+		margin-bottom: 0;
+		font-size: 2em;
+	}
+	@media (max-width: 480px){
+			.titu{
+				font-size: 1.1em;
+				text-transform: uppercase;
+				text-align: left;
+				padding-top: 1em;
+			}
+			.rs{
+				margin-top: 3em;
+			}
+		}
 
 /* fin index*/
 
